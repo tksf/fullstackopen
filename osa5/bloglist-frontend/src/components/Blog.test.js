@@ -57,23 +57,23 @@ describe ('<Blog />', () => {
 
   })
 
-  test('like button clicked twice, the event will be triggered twice', () => {
+  // test('like button clicked twice, the event will be triggered twice', () => {
 
-    // beacuse of the design
-    // const originalLikes = blog.likes
+  //   // beacuse of the design
+  //   // const originalLikes = blog.likes
 
-    /// query selectorilla haku, ja lopuks uudestaan
+  //   /// query selectorilla haku, ja lopuks uudestaan
 
-    const addLike = jest.fn()
-    const button = component.getByText('like')
-    fireEvent.click(button)
-    fireEvent.click(button)
+  //   // const addLike = jest.fn()
+  //   const button = component.getByText('like')
+  //   fireEvent.click(button)
+  //   fireEvent.click(button)
 
-    expect(addLike.mock.calls).toHaveLength(2)
-    // component.debug()
-    // expect(blog.likes).toHaveValue(1236)
+  //   // expect(addLike.mock.calls).toHaveLength(2)
+  //   // component.debug()
+  //   // expect(blog.likes).toHaveValue(1236)
 
-  }) 
+  // }) 
 
 
 
