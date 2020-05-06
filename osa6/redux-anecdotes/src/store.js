@@ -5,7 +5,6 @@ import anecdoteReducer, { initializeAnecdotes } from './reducers/anecdoteReducer
 import notificationReducer from './reducers/notificationReducer'
 import filterReducer from './reducers/filterReducer'
 import anecdoteService from './services/anecdotes'
-// import { useDispatch } from 'react-redux'
 
 const reducer = combineReducers({
   anecdotes: anecdoteReducer,

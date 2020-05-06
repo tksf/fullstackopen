@@ -20,14 +20,14 @@ const notificationReducer = (state = initialState, action) => {
   }
 }
 
-// let nextNotificationId = 0
-// not using id's here....
+let lastNotificationId = 0
 export const showNotification = (text, timeOut) => {
   return function (dispatch) {
-    // const id = nextNotificationId++
+
+    clearTimeout(lastNotificationId)
     dispatch(makeNotification(text))
 
-    setTimeout(() => {
+    lastNotificationId = setTimeout(() => {
       dispatch(clearNotification())
     }, timeOut * 1000)
   }
@@ -40,12 +40,10 @@ const makeNotification = (notification) => {
   }
 }
 
-
 const clearNotification = () => {
   return {
     type: 'CLEAR_NOTIFICATION',
   }
 }
-
 
 export default notificationReducer

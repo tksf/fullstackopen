@@ -11,9 +11,6 @@ const AnecdoteForm = (props) => {
   // const anecdotes = useSelector(state => state.anecdotes)
   const anecdotes = useSelector(({filter, anecdotes}) => {
 
-    // console.log("Filter:", anecdotes)
-    // console.log("Filter: ", filter)
-
     if (filter) {
       // return anecdotes
       return anecdotes.filter(anec => anec.content.includes(filter))
@@ -21,11 +18,6 @@ const AnecdoteForm = (props) => {
       return anecdotes
     }
   })
-
-
-  //   state => {
-  //   state.anecdotes.filter(s => s.includes(state.filter))
-  // })
 
   const vote = (anecdote) => {
     console.log('vote', anecdote.id)
