@@ -1,0 +1,23 @@
+{
+  "name": "library-backend",
+  "version": "1.0.0",
+  "description": "osa8 library backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TK",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.13.1",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.15",
+    "mongoose-unique-validator": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
