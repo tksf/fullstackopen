@@ -333,5 +333,3 @@ server.listen().then(({ url, subscriptionsUrl }) => {
   console.log(`Subscriptions ready at ${subscriptionsUrl}`)
 })
 
-// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjVlY2NlMjA2ODllYmM1NWZjYTNhZjkyZCIsImlhdCI6MTU5MDQ4NTc2N30.yFQol3Be5B8VjEI8lFgtPhFp379DeIQ_AWBASAGEei4
-
